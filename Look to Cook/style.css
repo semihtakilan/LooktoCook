@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Content Header Style */
+
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 0px -30px 0px; /* Üst ve alt boşluk */
+  position: relative;
+}
+
+.content-header::before{
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ddd; /* Çizgi rengi */
+  margin: 20px 20px 20px 80px; /* Çizgi ile metin arasındaki boşluk */
+}
+
+.content-header::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ddd; /* Çizgi rengi */
+  margin: 20px 80px 20px 20px; /* Çizgi ile metin arasındaki boşluk */
+}
+
+.content-header span {
+  font-size: 30px; /* Yazı boyutu */
+  font-weight: bold; /* Yazı kalınlığı */
+  color: #555; /* Yazı rengi */
+  white-space: nowrap; /* Tek satırda kalmasını sağlar */
+}
+
+/* Content Head */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 50px 0px 50px 100px;
+}
+
+/* Sol Taraf - Fotoğraf Bölgesi */
+.image-container {
+  position: relative;
+  width: 70%;
+  flex: 1.8;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Ok Butonları */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* Tarif Metni - Sağ Bölge */
+.recipe-details {
+  flex: 1;
+  width: 45%;
+  border: 2px dashed #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.recipe-details h2 {
+  margin-top: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.recipe-details p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.recipe-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 26px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+/* Content Tail */
+
+/* En Yeniler */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr)); /* Minimum 280px genişlik */
+  gap: 15px; /* Kutular arasındaki boşluk azaltıldı */
+  padding: 80px 280px; /* Sayfa kenarlarına boşluk */
+  margin-top: 20px;
+  justify-content: center; /* Kutuları ortalar */
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  max-width: 320px; /* Maksimum genişlik biraz artırıldı */
+  min-width: 320px;
+  margin: 0 auto; /* Kartların ortalanması */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 220px; /* Görsellerin yüksekliği artırıldı */
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+.card-badge {
+  display: inline-block;
+  background: #ff6666;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.card-category {
+  display: inline-block;
+  background: #e0f7fa;
+  color: #00796b;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card-author {
+  font-size: 14px;
+  color: #757575;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card-time {
+  font-size: 14px;
+  color: #ff6666;
+}
+
+.card-rating {
+  font-size: 14px;
+  color: #ffd700;
+}

@@ -1,0 +1,81 @@
+/* Header Head */
+.header {
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.header a img {
+  margin-right: 60px;
+  border-radius: 5px;
+}
+
+.header a img:first-child{
+  margin-left: 40px;
+}
+
+.search_bar {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  padding: 4px;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.search_bar img {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.search-bar{
+  background-color: #f5f5f5;
+  width: 200px;
+  min-width: 200px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-bar::placeholder{
+  font-weight: bolder
+}
+
+.user {
+  display: inline-block;
+  padding: 15px 20px;
+  border: 1px solid #f56d16;
+  border-radius: 8px;
+  background-color: #fff4e6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  text-align: center;
+}
+
+.username {
+  font-size: 18px;
+  color: #000;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.logout-btn {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #f56d16; /* Ana renginiz */
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #e05c14;
+}

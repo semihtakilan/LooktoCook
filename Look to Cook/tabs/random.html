@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarifler</title>
+  <link rel="stylesheet" href="random.css">
+  <link rel="stylesheet" href="../ortak/footer.css">
+  <link rel="stylesheet" href="../ortak/header.css">
+  <link rel="stylesheet" href="../ortak/navbar.css">
+  <link rel="icon" href="../images/logo2.png">
+</head>
+<body>
+  <!--Header-->
+  <div class="header">
+    <a href="../index.html">
+      <img  src="../images/logo2.png" alt="Look to Cook logo" height= 100px >
+    </a>
+
+    <form action="ara.html" method="GET" class="search_bar">
+      <input class="search-bar" type="text" name="q" placeholder="Yemek tarifi veya yazar ara" required>
+      <img src="../images/search.png" alt="Arama Butonu">
+    </form>
+    <a href="post.html">
+      <img src="../images/ekle.png" alt="Tarif Ekle butonu" height= 50px>
+    </a>
+
+    <div id="user" class="user0">
+      <a href="login/login.php">
+        <img src="../images/login.png" alt="Giriş yap görseli" height= 50px>
+      </a>
+    </div>
+  </div>
+
+  <!--Navigation Bar-->
+  <div class="topnav">
+    <a href="recipes.html">
+      <img src="../images/spoonKnife.png" alt="Çatal Kaşık" height=50px>
+      <span><b>Tarifler</b></span>
+    </a>
+    <a href="trends.html">
+      <img src="../images/flame.png" alt="Alev" height=50px>
+      <span><b>Trendler</b></span>
+    </a>
+    <a href="random.html" class="active">
+      <img src="../images/glove.png" alt="Fırın Eldiveni" height=50px>
+      <span><b>Ne Pişirsem ?</b></span>
+    </a>
+    <a href="blog.html">
+      <img src="../images/book.png" alt="Kitap" height=50px>
+      <span><b>Blog</b></span>
+    </a>
+  </div>
+
+  <div>
+    <div class="content-header">
+      <span>İşte Karşınızda Yapabileceğiniz Tarifler</span>
+    </div>
+    <div class="tarifler" id="tarifler">
+    </div>
+</div>
+  
+  <!--Footer-->
+  <footer>
+    <div class="footer-container">
+        <div class="footer-nav">
+            <h3>Site Haritası</h3>
+            <ul>
+                <li><a href="../index.html">Ana Sayfa</a></li>
+                <li><a href="info.html">Hakkımızda</a></li>
+                <li><a href="contact.html">Bize Ulaşın</a></li>
+                <li><a href="#">Gizlilik Politikası</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>İletişim</h3>
+            <p>Email: info@looktocook.com</p>
+            <p>Telefon: +90 547 601 24 31</p>
+        </div>
+        <div class="footer-social">
+            <h3>Sosyal Medya</h3>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">X</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 LooktoCook. Tüm Hakları Saklıdır.</p>
+    </div>
+  </footer>
+
+  <script>
+    recipes = [
+      {
+      "title": "Kalan Muzları Değerlendir: Muzlu Yulaflı Muffin",
+      "imgSrc": "https://www.idilyazar.com/wp-content/uploads/2023/01/yulaflimuffin.png",
+      "imgAlt": "Muzlu Yulaflı Muffin",
+      "badge": "YENİ",
+      "author": "Ferhat Bora",
+      "category": "TATLI KEK",
+      "time": "15dk",
+      "rating": "★★★★★",
+      "link": "#"
+    },
+      {
+      "title": "Bu Tarifle Artık Herkes Yapabilecek: Mantı",
+      "imgSrc": "https://fakeimg.pl/600x400?text=Food+IMAGE&font=lobster",
+      "imgAlt": "Mantı",
+      "badge": "YENİ",
+      "author": "Ferhat Bora",
+      "category": "MAKARNA",
+      "time": "40dk",
+      "rating": "★★★★★",
+      "link": "./manti.html"
+    },
+      {
+      "title": "Kuzu Sırtından: Yağlı Kara",
+      "imgSrc": "https://i.lezzet.com.tr/images-xxlarge-recipe/yagli-kara-7d2e065d-b181-4810-9ef5-cb7c5f83ad56.jpg",
+      "imgAlt": "Yağlı Kara",
+      "badge": "YENİ",
+      "author": "evdenkendinpisir",
+      "category": "ET",
+      "time": "45dk",
+      "rating": "★★★★★",
+      "link": "#"
+    },
+    {
+    "title": "Zeytinyağlı Taze Fasulye",
+    "imgSrc": "https://fakeimg.pl/600x400?text=Food+IMAGE&font=lobster",
+    "imgAlt": "Taze Fasulye",
+    "badge": "YENİ",
+    "author": "ZeytinyağlıUstası",
+    "category": "SEBZE",
+    "time": "35dk",
+    "rating": "★★★★",
+    "link": "#"
+  },
+  {
+    "title": "Havuçlu Kek",
+    "imgSrc": "https://fakeimg.pl/600x400?text=Food+IMAGE&font=lobster",
+    "imgAlt": "Havuçlu Kek",
+    "badge": "YENİ",
+    "author": "TatlıMutfak",
+    "category": "TATLI KEK",
+    "time": "45dk",
+    "rating": "★★★★★",
+    "link": "#"
+  },
+  {
+    "title": "Fırın Tavuk Kanat",
+    "imgSrc": "https://fakeimg.pl/600x400?text=Food+IMAGE&font=lobster",
+    "imgAlt": "Tavuk Kanat",
+    "badge": "YENİ",
+    "author": "KanatUstası",
+    "category": "TAVUK",
+    "time": "35dk",
+    "rating": "★★★★",
+    "link": "#"
+  },
+  {
+    "title": "Lahana Turşusu",
+    "imgSrc": "https://fakeimg.pl/600x400?text=Food+IMAGE&font=lobster",
+    "imgAlt": "Lahana Turşusu",
+    "badge": "YENİ",
+    "author": "TurşuSever",
+    "category": "TURŞU",
+    "time": "20dk",
+    "rating": "★★★★",
+    "link": "#"
+  },
+  {
+    "title": "Patates Tava",
+    "imgSrc": "https://fakeimg.pl/600x400?text=Food+IMAGE&font=lobster",
+    "imgAlt": "Patates Tava",
+    "badge": "YENİ",
+    "author": "PratikTarifler",
+    "category": "ATIŞTIRMALIK",
+    "time": "15dk",
+    "rating": "★★★★",
+    "link": "#"
+  },
+  {
+    "title": "Kuzu Tandır",
+    "imgSrc": "https://fakeimg.pl/600x400?text=Food+IMAGE&font=lobster",
+    "imgAlt": "Kuzu Tandır",
+    "badge": "YENİ",
+    "author": "EtUstası",
+    "category": "ET",
+    "time": "180dk",
+    "rating": "★★★★★",
+    "link": "#"
+  },
+  {
+    "title": "Sucuklu Yumurta",
+    "imgSrc": "https://fakeimg.pl/600x400?text=Food+IMAGE&font=lobster",
+    "imgAlt": "Sucuklu Yumurta",
+    "badge": "YENİ",
+    "author": "KahvaltıKeyfi",
+    "category": "KAHVALTILIK",
+    "time": "10dk",
+    "rating": "★★★★★",
+    "link": "#"
+  },
+  {
+    "title": "Fettuccine Alfredo",
+    "imgSrc": "https://fakeimg.pl/600x400?text=Food+IMAGE&font=lobster",
+    "imgAlt": "Fettuccine Alfredo",
+    "badge": "YENİ",
+    "author": "MakarnaSanatı",
+    "category": "MAKARNA",
+    "time": "25dk",
+    "rating": "★★★★★",
+    "link": "#"
+  },
+  {
+    "title": "Humus",
+    "imgSrc": "https://fakeimg.pl/600x400?text=Food+IMAGE&font=lobster",
+    "imgAlt": "Humus",
+    "badge": "YENİ",
+    "author": "MezeMutfağı",
+    "category": "MEZE",
+    "time": "15dk",
+    "rating": "★★★★★",
+    "link": "#"
+  }
+    ]
+    let n = 0;
+
+    const tariflerDiv = document.getElementById('tarifler');
+
+    while (n < 4) {
+      const index = Math.floor(Math.random() * recipes.length);
+      item = recipes[index];
+      console.log(item.title);
+      const card = document.createElement('div');
+      card.className = 'card';
+        
+        card.innerHTML = `
+            <img src="${item.imgSrc}" alt="${item.imgAlt}">
+            <div class="card-info">
+                <div class="card-badge">${item.badge}</div>
+                <a href="tarifler.html?category=${item.category}"><div class="card-category">${item.category}</div></a>
+                <a href="${item.link}"><h3 class="card-title">${item.title}</h3></a>
+                <p class="card-author">${item.author}</p>
+                <div class="card-details">
+                    <span class="card-time">${item.time}</span>
+                    <span class="card-rating">${item.rating}</span>
+                </div>
+            </div>
+        `;
+        
+        tariflerDiv.appendChild(card);
+      
+
+      n++;
+    }
+
+    console.log(n);
+    let counter = 0;
+      for (const item of array) {
+          
+          counter++;
+}
+  </script>
+</body>
+</html>
