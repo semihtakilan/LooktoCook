@@ -1,0 +1,20 @@
+[
+  {
+    "image": "../images/recipes/yaglama/kayseri_yaglamasi.webp",
+    "title": "Kayseri Yağlaması",
+    "description": "Dünya mutfakları bir yana Türk mutfağı bir yana. Nasıl olmasın? El emeğinin, uğraşının ön planda olduğu, yaratıcılığın vazgeçilmez şart kabul edildiği bir mutfak bizimkisi. Her yöremizden, şehrimizden, evimizden ayrı bir lezzet şahanesi çıkıyor. Bunlardan biri de Kayseri'nin en güzel yemeklerinden şebit. Yağlama ve Kayseri yağlaması adıyla da biliniyor.", 
+    "link": "../tabs/recipes/yaglama.html"
+  },
+  {
+    "image": "../images/recipes/manti/manti.webp",
+    "title": "Kayserisi Mantısı",
+    "description": "Ülkemizin en kıymetli yemek tariflerinin başında geliyor mantılar. Birbirinden nefis ve farklı mantı tarifleri olsa da en sevileni klasik mantı tarifi oldu hep. İçi kıymalı minik hamurlar, üzerine bol sarımsaklı yoğurt ve tereyağlı sosla buluşunca lezzetine lezzet katılıyor. Karşınızda büyük küçük herkesin afiyetle yiyeceği, ev yapımı nefis mi nefis mantı tarifi!",
+    "link": "../tabs/recipes/manti.html"
+  },
+  {
+    "image": "../images/recipes/lahmacun/lahmacun.webp",
+    "title": "Lahmacun",
+    "description": "Lahmacun, yemesi en keyifli, en çok sevdiğimiz yemek tariflerinin başında geliyor. Ancak onu evde tıpkı dışarıda yediklerimiz kadar nefis bir şekilde hazırlamak da mümkün. Yanına bolca sumaklı soğanla servis etmelik nefis bir lahmacun yapalım hadi gelin. İhtiyacınız olan malzemeleri bir bir anlatıyoruz.",
+    "link": "../tabs/recipes/lahmacun.html"
+  }
+]

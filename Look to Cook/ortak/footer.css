@@ -1,0 +1,43 @@
+/* Footer Tasarımı */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-nav, .footer-contact, .footer-social {
+  width: 23%;
+  margin: 10px 0;
+}
+
+.footer-nav ul, .footer-social ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-nav li, .footer-social li {
+  margin: 10px 0;
+}
+
+.footer-nav a, .footer-social a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-nav a:hover, .footer-social a:hover {
+  color: #f39c12;
+}
+
+/* Footer Alt Bilgileri */
+.footer-bottom p {
+  font-size: 14px;
+  margin: 0;
+}
